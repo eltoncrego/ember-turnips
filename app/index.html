@@ -3,23 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>EmberTurnips</title>
+    <title>Ember Turnips</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     {{content-for "head"}}
-
+    <link rel="icon" href="{{rootURL}}images/icons/favicon.png"  type="image/icon type">
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/ember-turnips.css">
-
     {{content-for "head-footer"}}
   </head>
   <body>
     {{content-for "body"}}
-
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/ember-turnips.js"></script>
-
     {{content-for "body-footer"}}
   </body>
 </html>
