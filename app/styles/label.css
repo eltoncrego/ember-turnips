@@ -1,0 +1,11 @@
+.text-label {
+  background-color: var(--brown);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 4px 12px;
+  font-size: 12px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
