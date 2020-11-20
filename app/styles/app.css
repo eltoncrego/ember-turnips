@@ -1,0 +1,16 @@
+@import 'normalize.css';
+
+:root {
+  --green: #bfd9c8;
+  --blue: #c2e9ff;
+  --brown: #ad8a64;
+  --black: #39393a;
+  --cream: #f3ede2;
+  --white: #f5f5f5;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--black);
+  font-family: 'Nunito', sans-serif;
+}
