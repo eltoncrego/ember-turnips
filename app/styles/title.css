@@ -1,0 +1,9 @@
+.title {
+  background-color: var(--white);
+  padding: 16px;
+}
+
+.title__main-title {
+  font-size: 24px;
+  margin: 0;
+}
