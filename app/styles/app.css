@@ -29,6 +29,7 @@ body.ember-turnips {
   background-color: var(--green);
   color: var(--black);
   font-family: 'Nunito', sans-serif;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   align-items: center;

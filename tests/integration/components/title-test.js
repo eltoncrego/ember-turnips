@@ -14,7 +14,7 @@ module('Integration | Component | title', function (hooks) {
     assert.dom('h1').hasClass('title__main-title');
     assert.equal(
       this.element.textContent.trim(),
-      'Animal Crossing: New Horizons Turnip Price Calculator',
+      'Turnip Price Calculator\n  Animal Crossing: New Horizons',
     );
   });
 });
