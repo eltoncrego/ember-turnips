@@ -8,7 +8,7 @@ module('Integration | Component | inputs/text-input', function (hooks) {
 
   test('it renders a floating label', async function (assert) {
     await render(hbs`
-      <Inputs::TextInput @label="Example Input" @type="text" />
+      <Inputs::TextInput @label="Example Input" type="text" />
     `);
     assert.dom('div').hasClass('text-input');
     assert.dom('div.text-label').exists();
@@ -22,7 +22,9 @@ module('Integration | Component | inputs/text-input', function (hooks) {
       overflow: 'hidden',
       textOverflow: 'ellipsis',
     });
-    assert.dom('input').hasClass('text-input__input');
+    assert.dom('input').exists();
+    assert.dom('input').hasAttribute('type');
+    assert.dom('input').matchesSelector('input.text-input__input[type=text]');
     assert.dom('input').hasStyle({
       backgroundColor: 'rgb(245, 245, 245)',
       border: '0px none rgb(57, 57, 58)',
