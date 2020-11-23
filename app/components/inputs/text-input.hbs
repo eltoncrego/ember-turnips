@@ -1,0 +1,8 @@
+<div class="text-input">
+  {{#if @label}}
+    <Label for="{{@label}}">
+      {{@label}}
+    </Label>
+  {{/if}}
+  <input class="text-input__input" type={{@type}} id="{{if @label @label}}" />
+</div>

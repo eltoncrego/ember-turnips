@@ -1,0 +1,33 @@
+.text-input {
+  display: inline-block;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 1px;
+}
+
+.text-input > .text-label {
+  position: absolute;
+  z-index: var(--labelZIndex);
+  max-width: 102px;
+  animation: float 2s ease-in-out infinite;
+}
+
+.text-input > .text-label > label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-input__input {
+  position: absolute;
+  top: 20px;
+  left: 4px;
+  padding: 8px 16px;
+  padding-top: 12px;
+  border-radius: 16px;
+  background-color: var(--white);
+  border: none;
+  background-color: var(--white);
+  color: var(--black);
+  animation: float 2s ease-in-out 300ms infinite;
+}
